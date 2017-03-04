@@ -18,4 +18,5 @@ enum ReactionType:Int {
             return "kami"
         }
     }
+
 }

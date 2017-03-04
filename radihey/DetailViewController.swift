@@ -12,25 +12,24 @@ import ObjectMapper
 import AVFoundation
 
 class DetailViewController: UIViewController {
-    let ref = FIRDatabase.database().reference().child("channels")
-    var channelName = ""
+
+    var firebaseClient: FirebaseClient!
+    var channelName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         /**
          - SeeAlso: https://gist.github.com/katowulf/6383103
          - Note: コネクションを貼る際に一件だけ取得するように実装しているが、最初繋がった際にもデータを取得してしまうのでフラグ管理。後で直す。
         */
+        
         var first = true
-        self.ref.child(channelName).queryLimited(toLast: 1).observe(.childAdded, with: { (snapshot) in
+        firebaseClient.addReactionObserver(
+        of: channelName) { [weak self] reaction in
             if first { first = false; return }
-            guard let reaction = Mapper<Reaction>().map(snapshot: snapshot) else { return }
-            
             guard let voiceType = reaction.voiceType else { return }
-            self.playSound(voiceType: voiceType)
-        })
+            self?.playSound(voiceType: voiceType)
+        }
     }
     
     /**
@@ -47,17 +46,10 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func tappedLikeButton(_ sender: UIButton) {
-        self.ref.child(channelName).childByAutoId().setValue(["reactionId": 0, "voiceType": 0, "date": FIRServerValue.timestamp()])
-        
-        let viewController = RoomViewController.instantiate()
-        present(viewController, animated: true, completion: nil)
+        firebaseClient.send(reaction: .maleA(.like), to: channelName)
     }
     
     @IBAction func tappedGodButton(_ sender: UIButton) {
-        self.ref.child(channelName).childByAutoId().setValue(["reactionId": 1, "voiceType": 1, "date": FIRServerValue.timestamp()])
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        firebaseClient.send(reaction: .maleA(.god), to: channelName)
     }
 }

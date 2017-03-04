@@ -11,6 +11,8 @@ import UIKit
 class ListViewController: UITableViewController {
     var channels = ["A channel","B channel","C channel"]
     
+    private var firebaseClient: FirebaseClient = FirebaseClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,6 +23,7 @@ class ListViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let vc = (segue.destination as? DetailViewController)!
+                vc.firebaseClient = firebaseClient
                 print(channels[indexPath.row])
                 vc.channelName = channels[indexPath.row]
             }
