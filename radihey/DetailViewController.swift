@@ -46,10 +46,10 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func tappedLikeButton(_ sender: UIButton) {
-        firebaseClient.send(reaction: .maleA(.like), to: channelName)
+        firebaseClient.send(reaction: .maleA(.iine), to: channelName)
     }
     
     @IBAction func tappedGodButton(_ sender: UIButton) {
-        firebaseClient.send(reaction: .maleA(.god), to: channelName)
+        firebaseClient.send(reaction: .maleA(.kami), to: channelName)
     }
 }

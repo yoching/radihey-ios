@@ -13,32 +13,19 @@ final class RoomViewController: UIViewController {
     
     var firebaseClient: FirebaseClient!
     var channelName: String!
+//    let voiceType = 0 //可変にする
     
     @IBOutlet weak var buttonsBackgroundView: UIView!
     
     let cellModels: [ReactionButtonCellModel] = [
-        ReactionButtonCellModel(title: "なるほど"),
-        ReactionButtonCellModel(title: "へぇ"),
-        ReactionButtonCellModel(title: "いいね"),
-        ReactionButtonCellModel(title: "なるほど"),
-        ReactionButtonCellModel(title: "へぇ"),
-        ReactionButtonCellModel(title: "いいね"),
-        ReactionButtonCellModel(title: "なるほど"),
-        ReactionButtonCellModel(title: "へぇ"),
-        ReactionButtonCellModel(title: "いいね"),
-        ReactionButtonCellModel(title: "なるほど"),
-        ReactionButtonCellModel(title: "へぇ"),
-        ReactionButtonCellModel(title: "いいね"),
-        ReactionButtonCellModel(title: "なるほど"),
-        ReactionButtonCellModel(title: "へぇ"),
-        ReactionButtonCellModel(title: "いいね"),
-        ReactionButtonCellModel(title: "なるほど"),
-        ReactionButtonCellModel(title: "へぇ"),
-        ReactionButtonCellModel(title: "いいね"),
+        ReactionButtonCellModel(title: "なるほど", voiceStamp: VoiceStamp(reactionId: Message.naruhodo.rawValue, voiceType: 0)!),
+        ReactionButtonCellModel(title: "へぇ", voiceStamp: VoiceStamp(reactionId: Message.hee.rawValue, voiceType: 0)!),
+        ReactionButtonCellModel(title: "いいね", voiceStamp: VoiceStamp(reactionId: Message.iine.rawValue, voiceType: 0)!),
+        ReactionButtonCellModel(title: "やばい", voiceStamp: VoiceStamp(reactionId: Message.yabai.rawValue, voiceType: 0)!),
+        ReactionButtonCellModel(title: "おー", voiceStamp: VoiceStamp(reactionId: Message.oh.rawValue, voiceType: 0)!),
+        ReactionButtonCellModel(title: "神", voiceStamp: VoiceStamp(reactionId: Message.kami.rawValue, voiceType: 0)!),
     ]
 
-    
-    
     /**
      - SeeAlse: http://xyk.hatenablog.com/entry/2017/02/19/002743
      */
@@ -85,6 +72,6 @@ extension RoomViewController: UICollectionViewDataSource {
 
 extension RoomViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        firebaseClient.send(reaction: cellModels[indexPath.item].voiceStamp, to: channelName)
     }
 }
