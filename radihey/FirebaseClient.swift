@@ -14,7 +14,7 @@ final class FirebaseClient {
     
     private let ref = FIRDatabase.database().reference().child("channels")
     
-    func send(reaction: VoiceType, to channelName: String) {
+    func send(reaction: VoiceStamp, to channelName: String) {
         var parameters = reaction.parametersForFirebase
         parameters["date"] = FIRServerValue.timestamp()
         ref.child(channelName).childByAutoId()

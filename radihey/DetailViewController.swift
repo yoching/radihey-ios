@@ -35,7 +35,7 @@ class DetailViewController: UIViewController {
     /**
      - SeeAlse: http://xyk.hatenablog.com/entry/2017/02/19/002743
     */
-    func playSound(voiceType: VoiceType) {
+    func playSound(voiceType: VoiceStamp) {
         let url = voiceType.getSound()
         var soundID: SystemSoundID = 0
         AudioServicesCreateSystemSoundID(url as CFURL, &soundID)

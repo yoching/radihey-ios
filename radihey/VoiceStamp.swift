@@ -1,5 +1,5 @@
 //
-//  VoiceType.swift
+//  VoiceStamp.swift
 //  radihey
 //
 //  Created by syamaoka on 2017/03/04.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-enum VoiceType {
+enum VoiceStamp {
     case maleA(Message)
     case femaleA(Message)
     
     init?(reactionId: Int, voiceType: Int) {
         switch voiceType {
         case 0:
-            guard let voice = Message(rawValue: reactionId).flatMap(VoiceType.maleA) else {
+            guard let voice = Message(rawValue: reactionId).flatMap(VoiceStamp.maleA) else {
                 return nil
             }
             self = voice
         case 1:
-            guard let voice = Message(rawValue: reactionId).flatMap(VoiceType.femaleA) else {
+            guard let voice = Message(rawValue: reactionId).flatMap(VoiceStamp.femaleA) else {
                 return nil
             }
             self = voice

@@ -11,7 +11,7 @@ import ObjectMapper
 
 class Reaction: Mappable {
     var id: String!
-    var voiceType: VoiceType?
+    var voiceType: VoiceStamp?
     var date: Int!
     
     required init?(map Map: Map){
@@ -24,7 +24,7 @@ class Reaction: Mappable {
 
         if let voice = map["voiceType"].currentValue as? Int,
             let reaction = map["reactionId"].currentValue as? Int {
-          voiceType = VoiceType(reactionId: reaction, voiceType: voice)
+          voiceType = VoiceStamp(reactionId: reaction, voiceType: voice)
         }
     }
 }

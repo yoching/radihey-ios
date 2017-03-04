@@ -15,7 +15,7 @@
 		89C42B631E6A5DE9006BB0FB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */; };
 		89C42B651E6A6E02006BB0FB /* SE in Resources */ = {isa = PBXBuildFile; fileRef = 89C42B641E6A6E02006BB0FB /* SE */; };
 		89C42B681E6A8527006BB0FB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B671E6A8527006BB0FB /* Message.swift */; };
-		89C42B6A1E6A8540006BB0FB /* VoiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B691E6A8540006BB0FB /* VoiceType.swift */; };
+		89C42B6A1E6A8540006BB0FB /* VoiceStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B691E6A8540006BB0FB /* VoiceStamp.swift */; };
 		89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4234E1E6582CD003E4C96 /* AppDelegate.swift */; };
 		89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E423501E6582CD003E4C96 /* DetailViewController.swift */; };
 		89E423541E6582CD003E4C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E423521E6582CD003E4C96 /* Main.storyboard */; };
@@ -44,7 +44,7 @@
 		89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		89C42B641E6A6E02006BB0FB /* SE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SE; sourceTree = "<group>"; };
 		89C42B671E6A8527006BB0FB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		89C42B691E6A8540006BB0FB /* VoiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceType.swift; sourceTree = "<group>"; };
+		89C42B691E6A8540006BB0FB /* VoiceStamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceStamp.swift; sourceTree = "<group>"; };
 		89E4234B1E6582CD003E4C96 /* radihey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radihey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E4234E1E6582CD003E4C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E423501E6582CD003E4C96 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				89C42B671E6A8527006BB0FB /* Message.swift */,
-				89C42B691E6A8540006BB0FB /* VoiceType.swift */,
+				89C42B691E6A8540006BB0FB /* VoiceStamp.swift */,
 			);
 			name = Enums;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 				E3282BB71E6A82E500706DE0 /* ReactionButtonCellModel.swift in Sources */,
 				E3282BB31E6A827100706DE0 /* CollectionView+Type.swift in Sources */,
 				89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */,
-				89C42B6A1E6A8540006BB0FB /* VoiceType.swift in Sources */,
+				89C42B6A1E6A8540006BB0FB /* VoiceStamp.swift in Sources */,
 				89C42B681E6A8527006BB0FB /* Message.swift in Sources */,
 				E3282BAB1E6A71CC00706DE0 /* RoundedView.swift in Sources */,
 				89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */,
