@@ -10,11 +10,12 @@
 		13105677F16DA4F00155540B /* Pods_radihey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8923FB934C3C9EC0F2C05E7A /* Pods_radihey.framework */; };
 		892A1B181E69CE910022C31A /* Reaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A1B171E69CE910022C31A /* Reaction.swift */; };
 		892A1B1B1E69D0810022C31A /* Mapper+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A1B1A1E69D0810022C31A /* Mapper+Extension.swift */; };
-		892A1B1E1E69D25C0022C31A /* iine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 892A1B1D1E69D25C0022C31A /* iine.wav */; };
-		892A1B201E69D2690022C31A /* kami.wav in Resources */ = {isa = PBXBuildFile; fileRef = 892A1B1F1E69D2690022C31A /* kami.wav */; };
 		895956CB1E6909980052E18D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895956CA1E6909980052E18D /* ListViewController.swift */; };
 		8966B5561E6A5869008FE811 /* KFhimaji.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8966B5551E6A57FF008FE811 /* KFhimaji.otf */; };
 		89C42B631E6A5DE9006BB0FB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */; };
+		89C42B651E6A6E02006BB0FB /* SE in Resources */ = {isa = PBXBuildFile; fileRef = 89C42B641E6A6E02006BB0FB /* SE */; };
+		89C42B681E6A8527006BB0FB /* ReactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B671E6A8527006BB0FB /* ReactionType.swift */; };
+		89C42B6A1E6A8540006BB0FB /* VoiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B691E6A8540006BB0FB /* VoiceType.swift */; };
 		89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4234E1E6582CD003E4C96 /* AppDelegate.swift */; };
 		89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E423501E6582CD003E4C96 /* DetailViewController.swift */; };
 		89E423541E6582CD003E4C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E423521E6582CD003E4C96 /* Main.storyboard */; };
@@ -28,11 +29,12 @@
 		8923FB934C3C9EC0F2C05E7A /* Pods_radihey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_radihey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		892A1B171E69CE910022C31A /* Reaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reaction.swift; sourceTree = "<group>"; };
 		892A1B1A1E69D0810022C31A /* Mapper+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mapper+Extension.swift"; sourceTree = "<group>"; };
-		892A1B1D1E69D25C0022C31A /* iine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = iine.wav; sourceTree = "<group>"; };
-		892A1B1F1E69D2690022C31A /* kami.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kami.wav; sourceTree = "<group>"; };
 		895956CA1E6909980052E18D /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		8966B5551E6A57FF008FE811 /* KFhimaji.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KFhimaji.otf; sourceTree = "<group>"; };
 		89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		89C42B641E6A6E02006BB0FB /* SE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SE; sourceTree = "<group>"; };
+		89C42B671E6A8527006BB0FB /* ReactionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionType.swift; sourceTree = "<group>"; };
+		89C42B691E6A8540006BB0FB /* VoiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceType.swift; sourceTree = "<group>"; };
 		89E4234B1E6582CD003E4C96 /* radihey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radihey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E4234E1E6582CD003E4C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E423501E6582CD003E4C96 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -84,8 +86,8 @@
 		892A1B161E69CDFE0022C31A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				89C42B641E6A6E02006BB0FB /* SE */,
 				8966B5541E6A57F7008FE811 /* Font */,
-				892A1B1C1E69D24C0022C31A /* SE */,
 				89E4235A1E6582CD003E4C96 /* Info.plist */,
 				89E423551E6582CD003E4C96 /* Assets.xcassets */,
 			);
@@ -100,21 +102,21 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		892A1B1C1E69D24C0022C31A /* SE */ = {
-			isa = PBXGroup;
-			children = (
-				892A1B1F1E69D2690022C31A /* kami.wav */,
-				892A1B1D1E69D25C0022C31A /* iine.wav */,
-			);
-			name = SE;
-			sourceTree = "<group>";
-		};
 		8966B5541E6A57F7008FE811 /* Font */ = {
 			isa = PBXGroup;
 			children = (
 				8966B5551E6A57FF008FE811 /* KFhimaji.otf */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		89C42B661E6A8517006BB0FB /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				89C42B671E6A8527006BB0FB /* ReactionType.swift */,
+				89C42B691E6A8540006BB0FB /* VoiceType.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 		89E423421E6582CD003E4C96 = {
@@ -138,6 +140,7 @@
 		89E4234D1E6582CD003E4C96 /* radihey */ = {
 			isa = PBXGroup;
 			children = (
+				89C42B661E6A8517006BB0FB /* Enums */,
 				892A1B191E69D0720022C31A /* Extensions */,
 				892A1B161E69CDFE0022C31A /* Resources */,
 				892A1B151E69CC950022C31A /* Models */,
@@ -215,9 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C42B651E6A6E02006BB0FB /* SE in Resources */,
 				8966B5561E6A5869008FE811 /* KFhimaji.otf in Resources */,
-				892A1B201E69D2690022C31A /* kami.wav in Resources */,
-				892A1B1E1E69D25C0022C31A /* iine.wav in Resources */,
 				89E423591E6582CD003E4C96 /* LaunchScreen.storyboard in Resources */,
 				89E423611E6584FA003E4C96 /* GoogleService-Info.plist in Resources */,
 				89E423561E6582CD003E4C96 /* Assets.xcassets in Resources */,
@@ -282,6 +284,8 @@
 			files = (
 				892A1B1B1E69D0810022C31A /* Mapper+Extension.swift in Sources */,
 				89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */,
+				89C42B6A1E6A8540006BB0FB /* VoiceType.swift in Sources */,
+				89C42B681E6A8527006BB0FB /* ReactionType.swift in Sources */,
 				89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */,
 				89C42B631E6A5DE9006BB0FB /* SettingViewController.swift in Sources */,
 				892A1B181E69CE910022C31A /* Reaction.swift in Sources */,

@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         /**
          - SeeAlso: https://gist.github.com/katowulf/6383103
          - Note: コネクションを貼る際に一件だけ取得するように実装しているが、最初繋がった際にもデータを取得してしまうのでフラグ管理。後で直す。
@@ -26,21 +27,17 @@ class DetailViewController: UIViewController {
         self.ref.child(channelName).queryLimited(toLast: 1).observe(.childAdded, with: { (snapshot) in
             if first { first = false; return }
             guard let reaction = Mapper<Reaction>().map(snapshot: snapshot) else { return }
-            print(reaction.reactionId)
-            self.playSound(readctionId: reaction.reactionId)
+            
+            guard let voiceType = reaction.voiceType else { return }
+            self.playSound(voiceType: voiceType)
         })
     }
     
     /**
      - SeeAlse: http://xyk.hatenablog.com/entry/2017/02/19/002743
     */
-    func playSound(readctionId: Int) {
-        let url:URL
-        if readctionId == 0 {
-            url = Bundle.main.url(forResource: "kami", withExtension: "wav")!
-        } else {
-            url = Bundle.main.url(forResource: "iine", withExtension: "wav")!
-        }
+    func playSound(voiceType: VoiceType) {
+        let url = voiceType.getSound()
         var soundID: SystemSoundID = 0
         AudioServicesCreateSystemSoundID(url as CFURL, &soundID)
         AudioServicesAddSystemSoundCompletion(soundID, nil, nil, { (soundID, _) in
@@ -54,7 +51,7 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func tappedGodButton(_ sender: UIButton) {
-        self.ref.child(channelName).childByAutoId().setValue(["reactionId": 1, "voiceType": 0, "date": FIRServerValue.timestamp()])
+        self.ref.child(channelName).childByAutoId().setValue(["reactionId": 1, "voiceType": 1, "date": FIRServerValue.timestamp()])
     }
     
     override func didReceiveMemoryWarning() {
