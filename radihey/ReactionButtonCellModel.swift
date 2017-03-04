@@ -10,4 +10,5 @@ import Foundation
 
 struct ReactionButtonCellModel {
     let title: String
+    let voiceStamp: VoiceStamp
 }

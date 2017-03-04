@@ -7,16 +7,44 @@
 //
 
 enum Message:Int {
-    case like
-    case god
+    case iine
+    case hee
+    case naruhodo
+    case oh
+    case yabai
+    case kami
     
     var filePrefix: String {
         switch self {
-        case .like:
+        case .iine:
             return "iine"
-        case .god:
+        case .hee:
+            return "hee"
+        case .naruhodo:
+            return "naruhodo"
+        case .oh:
+            return "oh"
+        case .yabai:
+            return "yabai"
+        case .kami:
             return "kami"
         }
     }
-
+    
+    var title: String {
+        switch self {
+        case .iine:
+            return "いいね"
+        case .hee:
+            return "へえ"
+        case .naruhodo:
+            return "なるほど"
+        case .oh:
+            return "おー"
+        case .yabai:
+            return "やばい"
+        case .kami:
+            return "かみ"
+        }
+    }
 }

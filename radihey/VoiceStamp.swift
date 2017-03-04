@@ -38,6 +38,15 @@ enum VoiceStamp {
         }
     }
     
+    func getTitle() -> String {
+        switch self {
+        case .maleA(let reaction):
+            return reaction.title
+        case .femaleA(let reaction):
+            return reaction.title
+        }
+    }
+    
     var parametersForFirebase: [String: Any] {
         switch self {
         case .maleA(let reaction):
