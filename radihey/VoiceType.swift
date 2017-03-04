@@ -37,4 +37,14 @@ enum VoiceType {
             return Bundle.main.url(forResource: reaction.filePrefix, withExtension: "wav", subdirectory: "SE/FA")!
         }
     }
+    
+    var parametersForFirebase: [String: Any] {
+        switch self {
+        case .maleA(let reaction):
+            return ["reactionId": reaction.rawValue, "voiceType": 0]
+        case .femaleA(let reaction):
+            return ["reactionId": reaction.rawValue, "voiceType": 1]
+            
+        }
+    }
 }

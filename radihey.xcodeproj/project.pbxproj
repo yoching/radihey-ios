@@ -31,6 +31,7 @@
 		E3282BB71E6A82E500706DE0 /* ReactionButtonCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BB61E6A82E500706DE0 /* ReactionButtonCellModel.swift */; };
 		E3282BB91E6A839100706DE0 /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BB81E6A839100706DE0 /* StoryboardInstantiatable.swift */; };
 		E3282BBB1E6A860A00706DE0 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BBA1E6A860A00706DE0 /* UIColor+Hex.swift */; };
+		E3282BBD1E6A88EA00706DE0 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BBC1E6A88EA00706DE0 /* FirebaseClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		E3282BB61E6A82E500706DE0 /* ReactionButtonCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionButtonCellModel.swift; sourceTree = "<group>"; };
 		E3282BB81E6A839100706DE0 /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
 		E3282BBA1E6A860A00706DE0 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		E3282BBC1E6A88EA00706DE0 /* FirebaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				892A1B171E69CE910022C31A /* Reaction.swift */,
+				E3282BBC1E6A88EA00706DE0 /* FirebaseClient.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				E3282BB91E6A839100706DE0 /* StoryboardInstantiatable.swift in Sources */,
 				E3282BB51E6A829E00706DE0 /* ReactionButtonCell.swift in Sources */,
 				E3282BB11E6A818C00706DE0 /* RoomViewController.swift in Sources */,
+				E3282BBD1E6A88EA00706DE0 /* FirebaseClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
