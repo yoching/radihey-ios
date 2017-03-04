@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 struct Const {
     static let VoiceType = "VoiceType"
+    static let VoiceTypeLimit = 5
 }
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         UINavigationBar.appearance().tintColor = UIColor.white
         application.statusBarStyle = UIStatusBarStyle.lightContent
-        UserDefaults.standard.set(arc4random() % 2, forKey: Const.VoiceType)
+        UserDefaults.standard.set(arc4random() % UInt32(Const.VoiceTypeLimit), forKey: Const.VoiceType)
         UserDefaults.standard.synchronize()
         
         return true
