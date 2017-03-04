@@ -14,7 +14,7 @@
 		8966B5561E6A5869008FE811 /* KFhimaji.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8966B5551E6A57FF008FE811 /* KFhimaji.otf */; };
 		89C42B631E6A5DE9006BB0FB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */; };
 		89C42B651E6A6E02006BB0FB /* SE in Resources */ = {isa = PBXBuildFile; fileRef = 89C42B641E6A6E02006BB0FB /* SE */; };
-		89C42B681E6A8527006BB0FB /* ReactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B671E6A8527006BB0FB /* ReactionType.swift */; };
+		89C42B681E6A8527006BB0FB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B671E6A8527006BB0FB /* Message.swift */; };
 		89C42B6A1E6A8540006BB0FB /* VoiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B691E6A8540006BB0FB /* VoiceType.swift */; };
 		89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4234E1E6582CD003E4C96 /* AppDelegate.swift */; };
 		89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E423501E6582CD003E4C96 /* DetailViewController.swift */; };
@@ -43,7 +43,7 @@
 		8966B5551E6A57FF008FE811 /* KFhimaji.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KFhimaji.otf; sourceTree = "<group>"; };
 		89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		89C42B641E6A6E02006BB0FB /* SE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SE; sourceTree = "<group>"; };
-		89C42B671E6A8527006BB0FB /* ReactionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionType.swift; sourceTree = "<group>"; };
+		89C42B671E6A8527006BB0FB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		89C42B691E6A8540006BB0FB /* VoiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceType.swift; sourceTree = "<group>"; };
 		89E4234B1E6582CD003E4C96 /* radihey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radihey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E4234E1E6582CD003E4C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		89C42B661E6A8517006BB0FB /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				89C42B671E6A8527006BB0FB /* ReactionType.swift */,
+				89C42B671E6A8527006BB0FB /* Message.swift */,
 				89C42B691E6A8540006BB0FB /* VoiceType.swift */,
 			);
 			name = Enums;
@@ -335,7 +335,7 @@
 				E3282BB31E6A827100706DE0 /* CollectionView+Type.swift in Sources */,
 				89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */,
 				89C42B6A1E6A8540006BB0FB /* VoiceType.swift in Sources */,
-				89C42B681E6A8527006BB0FB /* ReactionType.swift in Sources */,
+				89C42B681E6A8527006BB0FB /* Message.swift in Sources */,
 				E3282BAB1E6A71CC00706DE0 /* RoundedView.swift in Sources */,
 				89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */,
 				89C42B631E6A5DE9006BB0FB /* SettingViewController.swift in Sources */,
