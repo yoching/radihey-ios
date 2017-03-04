@@ -32,18 +32,18 @@ enum VoiceStamp {
     func getSound() -> URL {
         switch self {
         case .maleA(let reaction):
-            return Bundle.main.url(forResource: reaction.filePrefix, withExtension: "wav", subdirectory: "SE/MA")!
+            return Bundle.main.url(forResource: reaction.fileName, withExtension: "wav", subdirectory: "SE/MA")!
         case .femaleA(let reaction):
-            return Bundle.main.url(forResource: reaction.filePrefix, withExtension: "wav", subdirectory: "SE/FA")!
+            return Bundle.main.url(forResource: reaction.fileName, withExtension: "wav", subdirectory: "SE/FA")!
         }
     }
     
     func getTitle() -> String {
         switch self {
         case .maleA(let reaction):
-            return reaction.title
+            return reaction.text
         case .femaleA(let reaction):
-            return reaction.title
+            return reaction.text
         }
     }
     

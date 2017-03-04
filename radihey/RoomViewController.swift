@@ -17,14 +17,31 @@ final class RoomViewController: UIViewController {
     @IBOutlet weak var buttonsBackgroundView: UIView!
     @IBOutlet weak var radiheyImage: UIImageView!
     
-    let voiceStamps: [VoiceStamp] = [
-        VoiceStamp(reactionId: Message.naruhodo.rawValue, voiceType: 0)!,
-        VoiceStamp(reactionId: Message.hee.rawValue, voiceType: 0)!,
-        VoiceStamp(reactionId: Message.iine.rawValue, voiceType: 0)!,
-        VoiceStamp(reactionId: Message.yabai.rawValue, voiceType: 0)!,
-        VoiceStamp(reactionId: Message.oh.rawValue, voiceType: 0)!,
-        VoiceStamp(reactionId: Message.kami.rawValue, voiceType: 0)!,
+    let messages: [Message] = [
+        .deta,
+        .ee,
+        .hee,
+        .huun,
+        .iine,
+        .kami,
+        .kora,
+        .majide,
+        .muzukashii,
+        .nande,
+        .naruhodo,
+        .oh,
+//        .omoshiroi,
+        .shiritai,
+        .sugoi,
+        .tashikani,
+        .umaina,
+        .un,
+        .warai,
+        .yabai,
+        .yarareta,
     ]
+    
+    var voiceStamps: [VoiceStamp] = []
 
     /**
      - SeeAlse: http://xyk.hatenablog.com/entry/2017/02/19/002743
@@ -42,6 +59,11 @@ final class RoomViewController: UIViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for message in messages {
+            voiceStamps.append(VoiceStamp(reactionId: message.rawValue, voiceType: 0)!)
+        }
+        
         buttonsBackgroundView.layer.shadowColor = UIColor(rgb: 0x432A17).cgColor
         buttonsBackgroundView.layer.shadowOpacity = 0.5
         buttonsBackgroundView.layer.shadowOffset = CGSize(width: 0.0, height: -1.0)
