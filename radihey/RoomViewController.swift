@@ -18,27 +18,27 @@ final class RoomViewController: UIViewController {
     @IBOutlet weak var radiheyImage: UIImageView!
     
     let messages: [Message] = [
+        .naruhodo,
+        .hee,
+        .iine,
+        .oh,
+        .yabai,
+        .tashikani,
+        .majide,
+        .un,
+        .sugoi,
+        .warai,
         .deta,
         .ee,
-        .hee,
-        .huun,
-        .iine,
-        .kami,
-        .kora,
-        .majide,
-        .muzukashii,
-        .nande,
-        .naruhodo,
-        .oh,
-//        .omoshiroi,
         .shiritai,
-        .sugoi,
-        .tashikani,
-        .umaina,
-        .un,
-        .warai,
-        .yabai,
+        .nande,
+        .kami,
         .yarareta,
+        .huun,
+        .kora,
+        .muzukashii,
+        .oh,
+        .umaina,
     ]
     
     var voiceStamps: [VoiceStamp] = []
@@ -96,7 +96,7 @@ final class RoomViewController: UIViewController {
         func animateLabel() {
             let label = UILabel(frame: CGRect(x: 180, y: 278, width: 50, height: 50))
             label.font = UIFont(name: "KFhimaji", size: 70.0)
-            label.text = message.title
+            label.text = message.text
             label.sizeToFit()
             label.shadowColor = UIColor(rgb: 0x000000, alpha: 0.3)
             label.shadowOffset = CGSize(width: 2.0, height: 2.0)
