@@ -104,7 +104,7 @@
         <scene sceneID="2oN-xD-wMn">
             <objects>
                 <navigationController id="WS8-ts-UVt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4OK-kB-O7s">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4OK-kB-O7s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.2627450980392157" green="0.16470588235294117" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
