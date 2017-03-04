@@ -42,7 +42,7 @@ class DetailViewController: UIViewController {
             url = Bundle.main.url(forResource: "iine", withExtension: "wav")!
         }
         var soundID: SystemSoundID = 0
-        AudioServicesCreateSystemSoundID(url as! CFURL, &soundID)
+        AudioServicesCreateSystemSoundID(url as CFURL, &soundID)
         AudioServicesAddSystemSoundCompletion(soundID, nil, nil, { (soundID, _) in
             AudioServicesDisposeSystemSoundID(soundID)
         }, nil)
@@ -50,11 +50,11 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func tappedLikeButton(_ sender: UIButton) {
-        self.ref.child(channelName).childByAutoId().setValue(["reactionId": 0, "date": FIRServerValue.timestamp()])
+        self.ref.child(channelName).childByAutoId().setValue(["reactionId": 0, "voiceType": 0, "date": FIRServerValue.timestamp()])
     }
     
     @IBAction func tappedGodButton(_ sender: UIButton) {
-        self.ref.child(channelName).childByAutoId().setValue(["reactionId": 1, "date": FIRServerValue.timestamp()])
+        self.ref.child(channelName).childByAutoId().setValue(["reactionId": 1, "voiceType": 0, "date": FIRServerValue.timestamp()])
     }
     
     override func didReceiveMemoryWarning() {

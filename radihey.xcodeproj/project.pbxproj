@@ -14,6 +14,7 @@
 		892A1B201E69D2690022C31A /* kami.wav in Resources */ = {isa = PBXBuildFile; fileRef = 892A1B1F1E69D2690022C31A /* kami.wav */; };
 		895956CB1E6909980052E18D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895956CA1E6909980052E18D /* ListViewController.swift */; };
 		8966B5561E6A5869008FE811 /* KFhimaji.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8966B5551E6A57FF008FE811 /* KFhimaji.otf */; };
+		89C42B631E6A5DE9006BB0FB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */; };
 		89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4234E1E6582CD003E4C96 /* AppDelegate.swift */; };
 		89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E423501E6582CD003E4C96 /* DetailViewController.swift */; };
 		89E423541E6582CD003E4C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E423521E6582CD003E4C96 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		892A1B1F1E69D2690022C31A /* kami.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kami.wav; sourceTree = "<group>"; };
 		895956CA1E6909980052E18D /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		8966B5551E6A57FF008FE811 /* KFhimaji.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KFhimaji.otf; sourceTree = "<group>"; };
+		89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		89E4234B1E6582CD003E4C96 /* radihey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radihey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E4234E1E6582CD003E4C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E423501E6582CD003E4C96 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				89E423521E6582CD003E4C96 /* Main.storyboard */,
 				89E423571E6582CD003E4C96 /* LaunchScreen.storyboard */,
 				895956CA1E6909980052E18D /* ListViewController.swift */,
+				89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */,
 			);
 			path = radihey;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				892A1B1B1E69D0810022C31A /* Mapper+Extension.swift in Sources */,
 				89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */,
 				89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */,
+				89C42B631E6A5DE9006BB0FB /* SettingViewController.swift in Sources */,
 				892A1B181E69CE910022C31A /* Reaction.swift in Sources */,
 				895956CB1E6909980052E18D /* ListViewController.swift in Sources */,
 			);
