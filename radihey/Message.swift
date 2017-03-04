@@ -1,12 +1,12 @@
 //
-//  ReactionType.swift
+//  Message.swift
 //  radihey
 //
 //  Created by syamaoka on 2017/03/04.
 //  Copyright © 2017年 syamaoka. All rights reserved.
 //
 
-enum ReactionType:Int {
+enum Message:Int {
     case like
     case god
     
