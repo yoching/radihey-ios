@@ -13,7 +13,7 @@ enum Message:Int {
     case oh
     case yabai
     case kami
-    
+
     var filePrefix: String {
         switch self {
         case .iine:
@@ -30,7 +30,7 @@ enum Message:Int {
             return "kami"
         }
     }
-    
+
     var title: String {
         switch self {
         case .iine:
@@ -47,4 +47,5 @@ enum Message:Int {
             return "かみ"
         }
     }
+
 }
