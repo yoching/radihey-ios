@@ -13,6 +13,7 @@ class ListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpNavigationBar()
     }
     
     // MARK: - Segues
@@ -37,6 +38,10 @@ class ListViewController: UITableViewController {
         return channels.count
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel!.text = channels[indexPath.row]
@@ -46,6 +51,14 @@ class ListViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func setUpNavigationBar() {
+        let navigationTitleFont = UIFont(name: "KFhimaji", size: 24)!
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSFontAttributeName: navigationTitleFont,
+            NSForegroundColorAttributeName: UIColor.white
+        ]
     }
     
     @IBAction func tappedAddButton(_ sender: UIBarButtonItem) {

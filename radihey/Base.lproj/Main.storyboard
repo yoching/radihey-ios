@@ -84,31 +84,32 @@
             </objects>
             <point key="canvasLocation" x="1111" y="-275"/>
         </scene>
-        <!--List-->
+        <!--Rooms-->
         <scene sceneID="10V-t6-91V">
             <objects>
                 <tableViewController id="7oT-yR-gwA" customClass="ListViewController" customModule="radihey" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ida-Cb-Mge">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="lf8-jM-PBY" style="IBUITableViewCellStyleDefault" id="G9o-C1-NEn">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="lf8-jM-PBY" rowHeight="80" style="IBUITableViewCellStyleDefault" id="G9o-C1-NEn">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G9o-C1-NEn" id="D5g-A4-Sfb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lf8-jM-PBY">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lf8-jM-PBY">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="KFhimaji" family="KFhimaji" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="KFhimaji" family="KFhimaji" pointSize="35"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="showDetail" id="XUt-bM-Oba"/>
                                 </connections>
@@ -119,13 +120,15 @@
                             <outlet property="delegate" destination="7oT-yR-gwA" id="0FI-cU-zaO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="List" id="FHn-3f-Jja">
+                    <navigationItem key="navigationItem" title="Rooms" id="FHn-3f-Jja">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="Yyc-ac-dP1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="tappedAddButton:" destination="7oT-yR-gwA" id="GRd-8z-Vao"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Uiy-Jr-S5S">
+                        <barButtonItem key="rightBarButtonItem" image="ic_settings" id="Uiy-Jr-S5S">
+                            <color key="tintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="2iQ-Et-8Ru" kind="showDetail" id="fmR-3A-WWS"/>
                             </connections>
@@ -143,6 +146,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4OK-kB-O7s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.2627450980392157" green="0.16470588235294117" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.26274509800000001" green="0.1647058824" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="7oT-yR-gwA" kind="relationship" relationship="rootViewController" id="q0k-41-M8Q"/>
@@ -156,5 +164,6 @@
     <resources>
         <image name="button_iine" width="127" height="83"/>
         <image name="button_kami" width="127" height="83"/>
+        <image name="ic_settings" width="32" height="33"/>
     </resources>
 </document>
