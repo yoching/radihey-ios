@@ -1,0 +1,6 @@
+framework module Pods_radihey {
+  umbrella header "Pods-radihey-umbrella.h"
+
+  export *
+  module * { export * }
+}
