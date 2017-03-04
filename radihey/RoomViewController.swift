@@ -59,9 +59,9 @@ final class RoomViewController: UIViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         for message in messages {
-            voiceStamps.append(VoiceStamp(reactionId: message.rawValue, voiceType: 0)!)
+            voiceStamps.append(VoiceStamp(reactionId: message.rawValue,
+                                           voiceType: UserDefaults.standard.integer(forKey: Const.VoiceType))!)
         }
         
         buttonsBackgroundView.layer.shadowColor = UIColor(rgb: 0x432A17).cgColor
