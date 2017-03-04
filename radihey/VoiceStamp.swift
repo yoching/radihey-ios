@@ -56,4 +56,13 @@ enum VoiceStamp {
             
         }
     }
+    
+    var message: Message {
+        switch self {
+        case let .maleA(_message):
+            return _message
+        case let .femaleA(_message):
+            return _message
+        }
+    }
 }

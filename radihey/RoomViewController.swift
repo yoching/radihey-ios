@@ -50,8 +50,11 @@ final class RoomViewController: UIViewController {
         firebaseClient.addReactionObserver(
         of: channelName) { [weak self] reaction in
             if first { first = false; return }
-            guard let voiceType = reaction.voiceType else { return }
-            self?.playSound(voiceType: voiceType)
+            guard let voiceStamp = reaction.voiceType else {
+                return
+            }
+            self?.playSound(voiceType: voiceStamp)
+            self?.addReactionAnimation(message: voiceStamp.message)
         }
         
         setUpNavigationBar()
@@ -71,7 +74,7 @@ final class RoomViewController: UIViewController {
         func animateLabel() {
             let label = UILabel(frame: CGRect(x: 180, y: 278, width: 50, height: 50))
             label.font = UIFont(name: "KFhimaji", size: 70.0)
-            label.text = message.text
+            label.text = message.title
             label.sizeToFit()
             label.shadowColor = UIColor(rgb: 0x000000, alpha: 0.3)
             label.shadowOffset = CGSize(width: 2.0, height: 2.0)
