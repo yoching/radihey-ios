@@ -11,6 +11,8 @@ import UIKit
 class ListViewController: UITableViewController {
     var channels = ["A channel","B channel","C channel"]
     
+    private var firebaseClient: FirebaseClient = FirebaseClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpNavigationBar()
@@ -22,6 +24,7 @@ class ListViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let vc = (segue.destination as? DetailViewController)!
+                vc.firebaseClient = firebaseClient
                 print(channels[indexPath.row])
                 vc.channelName = channels[indexPath.row]
             }
@@ -65,5 +68,12 @@ class ListViewController: UITableViewController {
         channels.insert(UUID.init().uuidString, at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let roomViewController = RoomViewController.instantiate()
+        navigationController?.pushViewController(roomViewController, animated: true)
+        roomViewController.firebaseClient = firebaseClient
+        roomViewController.channelName = channels[indexPath.row]
     }
 }

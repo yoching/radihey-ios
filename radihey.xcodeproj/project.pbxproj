@@ -14,14 +14,24 @@
 		8966B5561E6A5869008FE811 /* KFhimaji.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8966B5551E6A57FF008FE811 /* KFhimaji.otf */; };
 		89C42B631E6A5DE9006BB0FB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */; };
 		89C42B651E6A6E02006BB0FB /* SE in Resources */ = {isa = PBXBuildFile; fileRef = 89C42B641E6A6E02006BB0FB /* SE */; };
-		89C42B681E6A8527006BB0FB /* ReactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B671E6A8527006BB0FB /* ReactionType.swift */; };
-		89C42B6A1E6A8540006BB0FB /* VoiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B691E6A8540006BB0FB /* VoiceType.swift */; };
+		89C42B681E6A8527006BB0FB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B671E6A8527006BB0FB /* Message.swift */; };
+		89C42B6A1E6A8540006BB0FB /* VoiceStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C42B691E6A8540006BB0FB /* VoiceStamp.swift */; };
 		89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4234E1E6582CD003E4C96 /* AppDelegate.swift */; };
 		89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E423501E6582CD003E4C96 /* DetailViewController.swift */; };
 		89E423541E6582CD003E4C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E423521E6582CD003E4C96 /* Main.storyboard */; };
 		89E423561E6582CD003E4C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E423551E6582CD003E4C96 /* Assets.xcassets */; };
 		89E423591E6582CD003E4C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E423571E6582CD003E4C96 /* LaunchScreen.storyboard */; };
 		89E423611E6584FA003E4C96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89E423601E6584FA003E4C96 /* GoogleService-Info.plist */; };
+		E3282BA91E6A71A700706DE0 /* ReactionButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3282BA81E6A71A700706DE0 /* ReactionButtonCell.xib */; };
+		E3282BAB1E6A71CC00706DE0 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BAA1E6A71CC00706DE0 /* RoundedView.swift */; };
+		E3282BAD1E6A73FD00706DE0 /* RoomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3282BAC1E6A73FD00706DE0 /* RoomViewController.storyboard */; };
+		E3282BB11E6A818C00706DE0 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BB01E6A818C00706DE0 /* RoomViewController.swift */; };
+		E3282BB31E6A827100706DE0 /* CollectionView+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BB21E6A827100706DE0 /* CollectionView+Type.swift */; };
+		E3282BB51E6A829E00706DE0 /* ReactionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BB41E6A829E00706DE0 /* ReactionButtonCell.swift */; };
+		E3282BB71E6A82E500706DE0 /* ReactionButtonCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BB61E6A82E500706DE0 /* ReactionButtonCellModel.swift */; };
+		E3282BB91E6A839100706DE0 /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BB81E6A839100706DE0 /* StoryboardInstantiatable.swift */; };
+		E3282BBB1E6A860A00706DE0 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BBA1E6A860A00706DE0 /* UIColor+Hex.swift */; };
+		E3282BBD1E6A88EA00706DE0 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282BBC1E6A88EA00706DE0 /* FirebaseClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +43,8 @@
 		8966B5551E6A57FF008FE811 /* KFhimaji.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KFhimaji.otf; sourceTree = "<group>"; };
 		89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		89C42B641E6A6E02006BB0FB /* SE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SE; sourceTree = "<group>"; };
-		89C42B671E6A8527006BB0FB /* ReactionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionType.swift; sourceTree = "<group>"; };
-		89C42B691E6A8540006BB0FB /* VoiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceType.swift; sourceTree = "<group>"; };
+		89C42B671E6A8527006BB0FB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		89C42B691E6A8540006BB0FB /* VoiceStamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceStamp.swift; sourceTree = "<group>"; };
 		89E4234B1E6582CD003E4C96 /* radihey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radihey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E4234E1E6582CD003E4C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E423501E6582CD003E4C96 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +54,16 @@
 		89E4235A1E6582CD003E4C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89E423601E6584FA003E4C96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9AD06E0EAA8BC3DD38F07750 /* Pods-radihey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-radihey.release.xcconfig"; path = "Pods/Target Support Files/Pods-radihey/Pods-radihey.release.xcconfig"; sourceTree = "<group>"; };
+		E3282BA81E6A71A700706DE0 /* ReactionButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactionButtonCell.xib; sourceTree = "<group>"; };
+		E3282BAA1E6A71CC00706DE0 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		E3282BAC1E6A73FD00706DE0 /* RoomViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RoomViewController.storyboard; sourceTree = "<group>"; };
+		E3282BB01E6A818C00706DE0 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		E3282BB21E6A827100706DE0 /* CollectionView+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+Type.swift"; sourceTree = "<group>"; };
+		E3282BB41E6A829E00706DE0 /* ReactionButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionButtonCell.swift; sourceTree = "<group>"; };
+		E3282BB61E6A82E500706DE0 /* ReactionButtonCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionButtonCellModel.swift; sourceTree = "<group>"; };
+		E3282BB81E6A839100706DE0 /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		E3282BBA1E6A860A00706DE0 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		E3282BBC1E6A88EA00706DE0 /* FirebaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				892A1B171E69CE910022C31A /* Reaction.swift */,
+				E3282BBC1E6A88EA00706DE0 /* FirebaseClient.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -98,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				892A1B1A1E69D0810022C31A /* Mapper+Extension.swift */,
+				E3282BB21E6A827100706DE0 /* CollectionView+Type.swift */,
+				E3282BBA1E6A860A00706DE0 /* UIColor+Hex.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -113,8 +136,8 @@
 		89C42B661E6A8517006BB0FB /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				89C42B671E6A8527006BB0FB /* ReactionType.swift */,
-				89C42B691E6A8540006BB0FB /* VoiceType.swift */,
+				89C42B671E6A8527006BB0FB /* Message.swift */,
+				89C42B691E6A8540006BB0FB /* VoiceStamp.swift */,
 			);
 			name = Enums;
 			sourceTree = "<group>";
@@ -141,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				89C42B661E6A8517006BB0FB /* Enums */,
+				E3282BA61E6A711B00706DE0 /* UI */,
 				892A1B191E69D0720022C31A /* Extensions */,
 				892A1B161E69CDFE0022C31A /* Resources */,
 				892A1B151E69CC950022C31A /* Models */,
@@ -153,6 +177,28 @@
 				89C42B621E6A5DE9006BB0FB /* SettingViewController.swift */,
 			);
 			path = radihey;
+			sourceTree = "<group>";
+		};
+		E3282BA61E6A711B00706DE0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E3282BA71E6A712900706DE0 /* Detail */,
+				E3282BB81E6A839100706DE0 /* StoryboardInstantiatable.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E3282BA71E6A712900706DE0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E3282BA81E6A71A700706DE0 /* ReactionButtonCell.xib */,
+				E3282BAA1E6A71CC00706DE0 /* RoundedView.swift */,
+				E3282BAC1E6A73FD00706DE0 /* RoomViewController.storyboard */,
+				E3282BB01E6A818C00706DE0 /* RoomViewController.swift */,
+				E3282BB41E6A829E00706DE0 /* ReactionButtonCell.swift */,
+				E3282BB61E6A82E500706DE0 /* ReactionButtonCellModel.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,10 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C42B651E6A6E02006BB0FB /* SE in Resources */,
+				E3282BA91E6A71A700706DE0 /* ReactionButtonCell.xib in Resources */,
 				8966B5561E6A5869008FE811 /* KFhimaji.otf in Resources */,
 				89E423591E6582CD003E4C96 /* LaunchScreen.storyboard in Resources */,
 				89E423611E6584FA003E4C96 /* GoogleService-Info.plist in Resources */,
 				89E423561E6582CD003E4C96 /* Assets.xcassets in Resources */,
+				E3282BAD1E6A73FD00706DE0 /* RoomViewController.storyboard in Resources */,
 				89E423541E6582CD003E4C96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,13 +331,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				892A1B1B1E69D0810022C31A /* Mapper+Extension.swift in Sources */,
+				E3282BB71E6A82E500706DE0 /* ReactionButtonCellModel.swift in Sources */,
+				E3282BB31E6A827100706DE0 /* CollectionView+Type.swift in Sources */,
 				89E423511E6582CD003E4C96 /* DetailViewController.swift in Sources */,
-				89C42B6A1E6A8540006BB0FB /* VoiceType.swift in Sources */,
-				89C42B681E6A8527006BB0FB /* ReactionType.swift in Sources */,
+				89C42B6A1E6A8540006BB0FB /* VoiceStamp.swift in Sources */,
+				89C42B681E6A8527006BB0FB /* Message.swift in Sources */,
+				E3282BAB1E6A71CC00706DE0 /* RoundedView.swift in Sources */,
 				89E4234F1E6582CD003E4C96 /* AppDelegate.swift in Sources */,
 				89C42B631E6A5DE9006BB0FB /* SettingViewController.swift in Sources */,
 				892A1B181E69CE910022C31A /* Reaction.swift in Sources */,
 				895956CB1E6909980052E18D /* ListViewController.swift in Sources */,
+				E3282BBB1E6A860A00706DE0 /* UIColor+Hex.swift in Sources */,
+				E3282BB91E6A839100706DE0 /* StoryboardInstantiatable.swift in Sources */,
+				E3282BB51E6A829E00706DE0 /* ReactionButtonCell.swift in Sources */,
+				E3282BB11E6A818C00706DE0 /* RoomViewController.swift in Sources */,
+				E3282BBD1E6A88EA00706DE0 /* FirebaseClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
