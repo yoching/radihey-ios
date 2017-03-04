@@ -30,4 +30,21 @@ enum Message:Int {
             return "kami"
         }
     }
+    
+    var title: String {
+        switch self {
+        case .iine:
+            return "いいね"
+        case .hee:
+            return "へえ"
+        case .naruhodo:
+            return "なるほど"
+        case .oh:
+            return "おー"
+        case .yabai:
+            return "やばい"
+        case .kami:
+            return "かみ"
+        }
+    }
 }

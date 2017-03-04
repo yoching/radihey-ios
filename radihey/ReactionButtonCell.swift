@@ -13,8 +13,8 @@ final class ReactionButtonCell: UICollectionViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var roundedView: RoundedView!
     
-    func configure(with cellModel: ReactionButtonCellModel) {
-        name.text = cellModel.title
+    func configure(with voiceStamp: VoiceStamp) {
+        name.text = voiceStamp.getTitle()
     }
  
     func setSelected(selected: Bool) {
