@@ -27,6 +27,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radihey_character" translatesAutoresizingMaskIntoConstraints="NO" id="VjA-H6-JSG">
+                                <rect key="frame" x="175" y="240.5" width="200" height="175.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VjA-H6-JSG" secondAttribute="height" multiplier="145:127" id="67f-m9-bud"/>
+                                    <constraint firstAttribute="width" constant="200" id="RoQ-1u-P5e"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSH-63-evJ">
                                 <rect key="frame" x="0.0" y="416" width="375" height="251"/>
                                 <subviews>
@@ -57,7 +64,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Name&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lI3-Dd-yDr">
-                                                            <rect key="frame" x="0.0" y="38.5" width="100" height="23.5"/>
+                                                            <rect key="frame" x="0.0" y="40" width="100" height="20"/>
                                                             <fontDescription key="fontDescription" name="KFhimaji" family="KFhimaji" pointSize="20"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -96,25 +103,19 @@
                                     <constraint firstItem="GOx-nT-4DI" firstAttribute="leading" secondItem="FSH-63-evJ" secondAttribute="leading" id="rlw-x0-cTr"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radihey_character" translatesAutoresizingMaskIntoConstraints="NO" id="VjA-H6-JSG">
-                                <rect key="frame" x="156" y="218" width="189" height="166"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="VjA-H6-JSG" secondAttribute="height" multiplier="189:166" id="HJV-fE-og8"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.94509803921568625" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="VjA-H6-JSG" secondAttribute="trailing" constant="30" id="6LD-92-KcX"/>
-                            <constraint firstItem="VjA-H6-JSG" firstAttribute="leading" secondItem="jjJ-AX-wZM" secondAttribute="leading" constant="156" id="CGr-kb-Q9V"/>
+                            <constraint firstAttribute="trailing" secondItem="VjA-H6-JSG" secondAttribute="trailing" id="6LD-92-KcX"/>
                             <constraint firstAttribute="trailing" secondItem="FSH-63-evJ" secondAttribute="trailing" id="Kfd-o2-QAm"/>
                             <constraint firstItem="FSH-63-evJ" firstAttribute="leading" secondItem="jjJ-AX-wZM" secondAttribute="leading" id="PvY-0j-r0W"/>
                             <constraint firstItem="04e-tg-WRS" firstAttribute="top" secondItem="FSH-63-evJ" secondAttribute="bottom" id="dpl-oz-3vW"/>
-                            <constraint firstItem="FSH-63-evJ" firstAttribute="top" secondItem="VjA-H6-JSG" secondAttribute="bottom" constant="32" id="fDu-jx-D16"/>
+                            <constraint firstItem="FSH-63-evJ" firstAttribute="top" secondItem="VjA-H6-JSG" secondAttribute="bottom" id="fDu-jx-D16"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonsBackgroundView" destination="FSH-63-evJ" id="WYW-0e-BkD"/>
+                        <outlet property="radiheyImage" destination="VjA-H6-JSG" id="JSD-Mp-hn7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ds-pt-4wA" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,5 +18,14 @@ enum Message:Int {
             return "kami"
         }
     }
+    
+    var text: String {
+        switch self {
+        case .like:
+            return "いいね"
+        case .god:
+            return "かみ"
+        }
+    }
 
 }
