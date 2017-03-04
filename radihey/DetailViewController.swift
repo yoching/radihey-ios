@@ -48,6 +48,9 @@ class DetailViewController: UIViewController {
     
     @IBAction func tappedLikeButton(_ sender: UIButton) {
         self.ref.child(channelName).childByAutoId().setValue(["reactionId": 0, "voiceType": 0, "date": FIRServerValue.timestamp()])
+        
+        let viewController = RoomViewController.instantiate()
+        present(viewController, animated: true, completion: nil)
     }
     
     @IBAction func tappedGodButton(_ sender: UIButton) {
