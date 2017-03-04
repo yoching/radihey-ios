@@ -62,6 +62,9 @@ class ListViewController: UITableViewController {
             NSFontAttributeName: navigationTitleFont,
             NSForegroundColorAttributeName: UIColor.white
         ]
+        let backButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        backButtonItem.tintColor = UIColor.white
+        navigationItem.backBarButtonItem = backButtonItem
     }
     
     @IBAction func tappedAddButton(_ sender: UIBarButtonItem) {

@@ -46,7 +46,7 @@
 		89C42B671E6A8527006BB0FB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		89C42B691E6A8540006BB0FB /* VoiceStamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceStamp.swift; sourceTree = "<group>"; };
 		89E4234B1E6582CD003E4C96 /* radihey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radihey.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		89E4234E1E6582CD003E4C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89E4234E1E6582CD003E4C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		89E423501E6582CD003E4C96 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		89E423531E6582CD003E4C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89E423551E6582CD003E4C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };

@@ -53,6 +53,17 @@ final class RoomViewController: UIViewController {
             guard let voiceType = reaction.voiceType else { return }
             self?.playSound(voiceType: voiceType)
         }
+        
+        setUpNavigationBar()
+    }
+    
+    private func setUpNavigationBar() {
+        let navigationTitleFont = UIFont(name: "KFhimaji", size: 24)!
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSFontAttributeName: navigationTitleFont,
+            NSForegroundColorAttributeName: UIColor.white
+        ]
+        self.navigationItem.title = channelName
     }
     
     func addReactionAnimation(message: Message) {
