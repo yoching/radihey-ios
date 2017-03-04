@@ -109,9 +109,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showDetail" id="XUt-bM-Oba"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -140,7 +137,7 @@
         <scene sceneID="2oN-xD-wMn">
             <objects>
                 <navigationController id="WS8-ts-UVt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4OK-kB-O7s">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4OK-kB-O7s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

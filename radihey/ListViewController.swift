@@ -56,4 +56,11 @@ class ListViewController: UITableViewController {
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let roomViewController = RoomViewController.instantiate()
+        navigationController?.pushViewController(roomViewController, animated: true)
+        roomViewController.firebaseClient = firebaseClient
+        roomViewController.channelName = channels[indexPath.row]
+    }
 }
